@@ -1,0 +1,161 @@
+#body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#media {
+    position: absolute;
+    overflow: hidden;
+    width: 700px;
+    height: 400px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.video-view {
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu-wrapper {
+    position: relative;
+    color: white;
+    bottom: 50px;
+    width: 98%;
+    margin: 0 auto;
+    left: 0;
+    border: 0;
+    opacity: 0;
+    background-color: rgb(0, 0, 0, .5);
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+#media:hover .menu-wrapper {
+    opacity: 1
+}
+
+.prog-window {
+    width: 100%;
+}
+
+.prog-bar {
+    position: relative;
+    cursor: pointer;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgb(2, 141, 255, 0.3);
+}
+
+.prog-tooltip {
+    position: absolute;
+    top: -30px;
+    color: white;
+    background-color: rgb(2, 141, 255, .8);
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+.prog-window:hover .prog-tooltip {
+    opacity: 1
+}
+
+.prog-loaded {
+    position: relative;
+    width: 0%;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: rgb(2, 141, 255);
+    border-radius: 10px;
+}
+
+.prog-loaded::after {
+    content: '';
+    width: 5px;
+    height: 15px;
+    border-radius: 20%;
+    background-color: rgb(2, 141, 255);
+    position: absolute;
+    right: -2.5px;
+    top: -5px;
+
+}
+
+.controls {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    position: relative;
+    display: flex;
+}
+
+.left {
+    position: relative;
+    display: flex;
+}
+
+#playBtn {
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#muteBtn {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.time-window {
+    padding: 4px;
+    margin-right: 5px;
+}
+
+#fullscreen {
+    cursor: pointer;
+}
+
+.volume-window {
+    width: 100px;
+    height: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.volume-back {
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+    background-color: rgb(2, 141, 255, 0.5);
+}
+
+.volumeTrack {
+    position: relative;
+    background-color: rgb(2, 141, 255);
+    height: 100%;
+    width: 100%;
+}
+
+.thumb {
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    border-radius: 20%;
+    background-color: rgb(2, 141, 255);
+    right: -2.5px;
+    top: -4.5px
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Slider</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="media" onmouseover="meuPlayer(this)">
+            <video class="video-view">
+                <source class="video_player"
+                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+            </video>
+            <div class="container">
+                <div class="menu-wrapper">
+                    <div class="prog-window">
+                        <div class="prog-tooltip">00:00</div>
+                        <div class="prog-bar">
+                            <div class="prog-loaded">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="left">
+                            <!--Play Button-->
+                            <div class="material-icons" id="playBtn">play_arrow</div>
+                            <!--Mute Button-->
+                            <div class="material-icons" id="muteBtn">volume_up</div>
+                            <!--Volume Range-->
+                            <div class="volume-window">
+                                <div class="volume-back">
+                                    <div class="volumeTrack">
+                                        <div class="thumb1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <!--Time-->
+                            <div class="time-window">
+                                <span class="curTime">00:00</span>
+                                <span>/</span>
+                                <span class="totalTime">00:00</span>
+                            </div>
+                            <!--Fullscreen Button-->
+                            <div class="material-icons" id="fullscreen">fullscreen</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
